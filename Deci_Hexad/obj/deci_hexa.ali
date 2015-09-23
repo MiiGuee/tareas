@@ -3,37 +3,28 @@ M P W=b
 A -gnatA
 A -mtune=generic
 A -march=pentiumpro
-P SS ZX
+P ZX
 
 RN
 RV NO_IO
-RV NO_SECONDARY_STACK
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U deci_hexa%b		deci_hexa.adb		68a439a8 NE OO SU
+U deci_hexa%b		deci_hexa.adb		0781834c NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
-W ada.strings%s		a-string.ads		a-string.ali
-W ada.strings.fixed%s	a-strfix.adb		a-strfix.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
-W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
 D ada.ads		20150518132148 3ffc8e18 ada%s
-D a-charac.ads		20150518132148 2d3ec45b ada.characters%s
-D a-chlat1.ads		20150518132148 66457d31 ada.characters.latin_1%s
 D a-except.ads		20150518132148 5250cb69 ada.exceptions%s
 D a-inteio.ads		20150518132148 f64b89a4 ada.integer_text_io%s
 D a-ioexce.ads		20150518132148 e4a01f64 ada.io_exceptions%s
 D a-stream.ads		20150518132148 119b8fb3 ada.streams%s
-D a-string.ads		20150518132148 90ac6797 ada.strings%s
-D a-strfix.ads		20150518132148 d07c346e ada.strings.fixed%s
-D a-strmap.ads		20150518132148 e8bb714a ada.strings.maps%s
 D a-tags.ads		20150518132148 dc4d0634 ada.tags%s
 D a-textio.ads		20150518132148 386df5d4 ada.text_io%s
 D a-tiinio.ads		20150518132148 aa04e5d6 ada.text_io.integer_io%s
 D a-unccon.ads		20150518132148 f9eb8f06 ada.unchecked_conversion%s
-D deci_hexa.adb		20150911022752 76fe71b6 deci_hexa%b
+D deci_hexa.adb		20150922192230 c9a7ff3c deci_hexa%b
 D interfac.ads		20150518132148 6033a23f interfaces%s
 D i-cstrea.ads		20150518132148 e53d8b8e interfaces.c_streams%s
 D system.ads		20150518132150 f4ce8c3a system%s
@@ -41,7 +32,6 @@ D s-crtl.ads		20150518132148 0ebbdb71 system.crtl%s
 D s-exctab.ads		20150518132148 54135002 system.exception_table%s
 D s-ficobl.ads		20150518132148 078245e4 system.file_control_block%s
 D s-parame.ads		20150518132150 7e2a0d7f system.parameters%s
-D s-secsta.ads		20150518132150 86a2856d system.secondary_stack%s
 D s-soflin.ads		20150518132150 aa763b52 system.soft_links%s
 D s-stache.ads		20150518132150 a37c21ec system.stack_checking%s
 D s-stalib.ads		20150518132150 fa0a3617 system.standard_library%s
@@ -50,34 +40,22 @@ D s-traent.ads		20150518132150 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20150518132150 9d58a4c0 system.unsigned_types%s
 D s-wchcon.ads		20150518132150 1b7d22d2 system.wch_con%s
 X 1 ada.ads
-16K9*Ada 19e8 15|1r6 2r6 3r6 15r6 16r15 17r6 20r17 27r3 28r3 29r3 30r4
-X 5 a-inteio.ads
-18K13*Integer_Text_IO[13|46] 15|1w10 15r10
-X 8 a-string.ads
-16K13*Strings 35e16 15|3r10 16r19 17r10 20r21
-29n30*Right{29E9} 15|20r29
-X 9 a-strfix.ads
-18K21*Fixed 251e22 15|3w18 16r27 17r18
-25U14*Move 15|17s24
-26a7 Source{string} 15|18r6
-27a7 Target{string} 15|19r6
-29e7 Justify{8|29E9} 15|20r6
-30e7 Pad{character} 15|21r6
-36V13*Index{natural} 15|16s33
-37a7 Source{string} 15|16r40
-38a7 Pattern{string} 15|16r56
-X 12 a-textio.ads
-49K13*Text_IO 471e16 15|2w10 27r7 28r7 29r7 30r8
-263U14*Put_Line 15|27s15 28s15 29s15 30s16
-X 13 a-tiinio.ads
-76U14*Put 15|15s26[5|18]
-X 15 deci_hexa.adb
-5U11*Deci_Hexa 5b11 32l5 32t14
-6V15 Integer2Hexa{string} 6b15 6>29 6>48 23l7 23t19 27s25 28s25 29s25 30s26
-6i29 Hex_Int{integer} 15r36
-6i48 Width{positive} 9r46 10r28 30r44
-8N6 Hex_Prefix_Length 9r26
-9a6 Hexa{string} 15m31 16r50 18r17 18r36
-10a6 Result{string} 19m17 22r13
-11i6 Start{natural} 16m6 18r23
+16K9*Ada 19e8 10|1r7 1r28 2r5 2r26
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 10|1w11 2r9
+X 7 a-textio.ads
+49K13*Text_IO 471e16 10|1w32 2r30
+208U14*Put 10|23s7 33s10
+263U14*Put_Line 10|16s4 17s4 18s4
+X 8 a-tiinio.ads
+56U14*Get 10|19s4[3|18]
+X 10 deci_hexa.adb
+4U11*Deci_Hexa 4b11 38l5 38t14
+6i4 b{integer} 30m7 31r27
+6i6 i{integer} 20m4 26r17 28m9 28r12 30r10
+6i8 j{integer} 21m4 32m10 33r23
+6i10 numero{integer} 19m8 22r8 23r20 25r13 26r21 27m9 27r17
+8a5 arreglo(integer) 26m9 32r13
+9a5 dec_hexa(character) 13m4 23r11 33r14
+31i11 i{integer} 32r21
 

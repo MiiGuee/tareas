@@ -9,13 +9,18 @@ procedure Main is
    hum:Integer := 30;
    temp:Integer:= 30;
 
+
+
+
    task body Temperatura is
 
    begin
       i:=0;
       loop
          i:=i+1;
-          Put_Line("Temperatura");
+         --tm:=tm+1;
+         Put_Line("Temperatura");
+
       if (temp < 20 and temp >37) then
       Put_Line("Activar el riego");
          Put_Line("");
@@ -36,13 +41,15 @@ procedure Main is
       i:=0;
       loop
          i:=i+1;
-          Put_Line("Humedad");
+        -- hm:=hm+1;
+         Put_Line("Humedad");
+
       if (hum < 20 and hum >40) then
       Put_Line("Activar el riego");
          Put_Line("");
             else
             Put_Line("Desactivar el riego");
-            Put_Line("");
+           Put_Line("");
             exit when i=100;
          end if;
          end loop;

@@ -16,7 +16,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 RV MAX_TASKS=1+
 
-U main%b		main.adb		edb6949d NE OO SU
+U main%b		main.adb		1356cd91 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.integer_wide_text_io%s  a-iwteio.ads	a-iwteio.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
@@ -45,7 +45,7 @@ D interfac.ads		20150518132148 6033a23f interfaces%s
 D i-c.ads		20150518132148 5421119b interfaces.c%s
 D i-cstrin.ads		20150518132148 341d0ddf interfaces.c.strings%s
 D i-cstrea.ads		20150518132148 e53d8b8e interfaces.c_streams%s
-D main.adb		20150922034010 70468789 main%b
+D main.adb		20150922185942 8ea6de85 main%b
 D system.ads		20150518132150 f4ce8c3a system%s
 D s-atacco.ads		20150518132148 4c36d12f system.address_to_access_conversions%s
 D s-crtl.ads		20150518132148 0ebbdb71 system.crtl%s
@@ -74,15 +74,17 @@ X 3 a-iwteio.ads
 18K13*Integer_Wide_Text_IO[12|25] 17|1w22 2r21
 X 8 a-textio.ads
 49K13*Text_IO 471e16 17|1w10 2r9
-263U14*Put_Line 17|18s11 20s7 21s10 23s13 24s13 39s11 41s7 42s10 44s13 45s13
-. 54s4
+263U14*Put_Line 17|22s10 25s7 26s10 28s13 29s13 45s10 48s7 49s10 51s13 52s12
+. 61s4
 X 17 main.adb
-4U11*Main 4b11 56l5 56t9
-6t9 Temperatura 12b14 31l8 31t19
-7t9 Humedad 33b14 51l8 51t15
-8i4 i{integer} 15m7 17m10 17r13 25r24 36m7 38m10 38r13 46r23
-9i4 hum{integer} 40r11 40r24
-10i4 temp{integer} 19r11 19r25
+4U11*Main 4b11 63l5 63t9
+6t9 Temperatura 15b14 36l8 36t19
+7t9 Humedad 38b14 58l8 58t15
+8i4 i{integer} 18m7 20m10 20r13 30r24 41m7 43m10 43r13 53r23
+8i6 tm{integer} 21m10 21r14
+8i9 hm{integer} 44m10 44r14
+9i4 hum{integer} 47r11 47r24
+10i4 temp{integer} 24r11 24r25
 X 28 s-stausa.ads
 203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
 268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22

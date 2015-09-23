@@ -35,7 +35,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#68a439a8#;
+   u00001 : constant Version_32 := 16#0781834c#;
    pragma Export (C, u00001, "deci_hexaB");
    u00002 : constant Version_32 := 16#fbff4c67#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -229,36 +229,12 @@ package ada_main is
    pragma Export (C, u00096, "system__val_lluB");
    u00097 : constant Version_32 := 16#13647f88#;
    pragma Export (C, u00097, "system__val_lluS");
-   u00098 : constant Version_32 := 16#af50e98f#;
-   pragma Export (C, u00098, "ada__stringsS");
-   u00099 : constant Version_32 := 16#e5480ede#;
-   pragma Export (C, u00099, "ada__strings__fixedB");
-   u00100 : constant Version_32 := 16#a86b22b3#;
-   pragma Export (C, u00100, "ada__strings__fixedS");
-   u00101 : constant Version_32 := 16#e2ea8656#;
-   pragma Export (C, u00101, "ada__strings__mapsB");
-   u00102 : constant Version_32 := 16#1e526bec#;
-   pragma Export (C, u00102, "ada__strings__mapsS");
-   u00103 : constant Version_32 := 16#41937159#;
-   pragma Export (C, u00103, "system__bit_opsB");
-   u00104 : constant Version_32 := 16#0765e3a3#;
-   pragma Export (C, u00104, "system__bit_opsS");
-   u00105 : constant Version_32 := 16#12c24a43#;
-   pragma Export (C, u00105, "ada__charactersS");
-   u00106 : constant Version_32 := 16#4b7bb96a#;
-   pragma Export (C, u00106, "ada__characters__latin_1S");
-   u00107 : constant Version_32 := 16#d22169ac#;
-   pragma Export (C, u00107, "ada__strings__searchB");
-   u00108 : constant Version_32 := 16#c1ab8667#;
-   pragma Export (C, u00108, "ada__strings__searchS");
-   u00109 : constant Version_32 := 16#2bce1226#;
-   pragma Export (C, u00109, "system__memoryB");
-   u00110 : constant Version_32 := 16#adb3ea0e#;
-   pragma Export (C, u00110, "system__memoryS");
+   u00098 : constant Version_32 := 16#2bce1226#;
+   pragma Export (C, u00098, "system__memoryB");
+   u00099 : constant Version_32 := 16#adb3ea0e#;
+   pragma Export (C, u00099, "system__memoryS");
    --  BEGIN ELABORATION ORDER
    --  ada%s
-   --  ada.characters%s
-   --  ada.characters.latin_1%s
    --  interfaces%s
    --  system%s
    --  system.case_util%s
@@ -319,16 +295,9 @@ package ada_main is
    --  system.wch_stw%b
    --  ada.exceptions.last_chance_handler%s
    --  ada.exceptions.last_chance_handler%b
-   --  system.bit_ops%s
-   --  system.bit_ops%b
    --  system.exception_table%s
    --  system.exception_table%b
    --  ada.io_exceptions%s
-   --  ada.strings%s
-   --  ada.strings.maps%s
-   --  ada.strings.fixed%s
-   --  ada.strings.search%s
-   --  ada.strings.search%b
    --  ada.tags%s
    --  ada.streams%s
    --  ada.streams%b
@@ -349,8 +318,6 @@ package ada_main is
    --  system.file_io%b
    --  interfaces.c%b
    --  ada.tags%b
-   --  ada.strings.fixed%b
-   --  ada.strings.maps%b
    --  system.soft_links%b
    --  system.os_lib%b
    --  system.secondary_stack%b
