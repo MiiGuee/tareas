@@ -9,52 +9,42 @@ procedure Main is
    hum:Integer := 30;
    temp:Integer:= 30;
 
-
-
-
    task body Temperatura is
-
+    Tm:Integer:=30;
    begin
       i:=0;
       loop
          i:=i+1;
-         --tm:=tm+1;
          Put_Line("Temperatura");
-
-      if (temp < 20 and temp >37) then
-      Put_Line("Activar el riego");
-         Put_Line("");
+          Tm:=temp+1;
+         if (temp < 20 and temp >37) then
+      Put_Line("Activar el riego la temperatura bajo");
+         --Put_Line("");
          else
-            Put_Line("Desactivar el riego");
-            Put_Line("");
+            Put_Line("Desactivar el riego la temperatura subio");
+            --Put_Line("");
              exit when i=100;
          end if;
          end loop;
-
-
-
    end Temperatura;
 
    task body Humedad is
-
+  Hm:Integer:=30;
     begin
       i:=0;
       loop
          i:=i+1;
-        -- hm:=hm+1;
          Put_Line("Humedad");
-
-      if (hum < 20 and hum >40) then
-      Put_Line("Activar el riego");
+         Hm:=hum+1;
+         if (hum < 20 and hum >40) then
+      Put_Line("Activar el riego la humedad bajo");
          Put_Line("");
             else
-            Put_Line("Desactivar el riego");
-           Put_Line("");
+            Put_Line("Desactivar el riego la humedad subio");
+            Put_Line("");
             exit when i=100;
          end if;
          end loop;
-
-
    end Humedad;
 
 begin

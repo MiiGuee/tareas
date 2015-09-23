@@ -271,9 +271,9 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\Users\MiiGuee V\Documents\GitHub\tareas\ConcTempHum\obj\main.o
-   --   -LC:\Users\MiiGuee V\Documents\GitHub\tareas\ConcTempHum\obj\
-   --   -LC:\Users\MiiGuee V\Documents\GitHub\tareas\ConcTempHum\obj\
+   --   C:\Users\MiiGuee V\tiemporeal\ConcTempHum\obj\main.o
+   --   -LC:\Users\MiiGuee V\tiemporeal\ConcTempHum\obj\
+   --   -LC:\Users\MiiGuee V\tiemporeal\ConcTempHum\obj\
    --   -LC:/gnat/2015/lib/gcc/i686-pc-mingw32/4.9.3/adalib/
    --   -static
    --   -lgnarl
