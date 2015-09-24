@@ -5,12 +5,12 @@ procedure Main is
 
     i:Integer:=0;
    numero:Integer:=0;
-   Arreglo:array(1..1000) of Integer;
+   arreglo:array(1..1000) of Integer;
 
 
    task type tarea;
 
-   arreglo:array(1..5000)of tarea;
+   --arreglo:array(1..5000)of tarea;
 
    task body tarea is
    begin
@@ -56,7 +56,7 @@ procedure Main is
          Put_Line("");
          end valor;
          for i in 1..1000 loop
-         Arreglo(i):=1;
+         arreglo(i):=1;
       end loop;
       primero.valor(1);
    end primero;
@@ -70,7 +70,7 @@ procedure Main is
          Put_Line("");
          end valor1;
       for i in 1..1000 loop
-         Arreglo(i):=1;
+         arreglo(i):=1;
       end loop;
       segundo.valor1(1);
    end segundo;
@@ -83,7 +83,7 @@ procedure Main is
          Put_Line("");
          end valor2;
        for i in 1..1000 loop
-         Arreglo(i):=1;
+         arreglo(i):=1;
       end loop;
       tercero.valor2(1);
    end tercero;
@@ -96,7 +96,7 @@ procedure Main is
          Put_Line("");
          end valor3;
       for i in 1..1000 loop
-         Arreglo(i):=1;
+         arreglo(i):=1;
       end loop;
       cuarto.valor3(1);
    end cuarto;
@@ -109,7 +109,7 @@ procedure Main is
          Put_Line("");
          end valor4;
       for i in 1..1000 loop
-         Arreglo(i):=1;
+         arreglo(i):=1;
       end loop;
       quinto.valor4(1);
    end quinto;
@@ -122,7 +122,7 @@ procedure Main is
          Put_Line("");
          end valor5;
            for i in 1..1000 loop
-         Arreglo(i):=1;
+         arreglo(i):=1;
       end loop;
          sexto.valor5(1);
       end sexto;

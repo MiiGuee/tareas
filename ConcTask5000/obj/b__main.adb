@@ -260,9 +260,9 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\Users\MiiGuee V\tiemporeal\ConcTask50\obj\main.o
-   --   -LC:\Users\MiiGuee V\tiemporeal\ConcTask50\obj\
-   --   -LC:\Users\MiiGuee V\tiemporeal\ConcTask50\obj\
+   --   C:\Users\MiiGuee V\tiemporeal\ConcTask5000\obj\main.o
+   --   -LC:\Users\MiiGuee V\tiemporeal\ConcTask5000\obj\
+   --   -LC:\Users\MiiGuee V\tiemporeal\ConcTask5000\obj\
    --   -LC:/gnat/2015/lib/gcc/i686-pc-mingw32/4.9.3/adalib/
    --   -static
    --   -lgnarl

@@ -3,14 +3,12 @@ M P W=b
 A -gnatA
 A -mtune=generic
 A -march=pentiumpro
-P SS ZX
+P ZX
 
 RN
 RV NO_EXCEPTION_HANDLERS
 RV NO_EXCEPTIONS
 RV NO_IO
-RV NO_IMPLICIT_LOOPS
-RV NO_SECONDARY_STACK
 RV NO_STANDARD_STORAGE_POOLS
 RV NO_TASK_HIERARCHY
 RV NO_TASKING
@@ -20,16 +18,14 @@ RV SPARK_05
 RV MAX_TASK_ENTRIES=1
 RV MAX_TASKS=1+
 
-U main%b		main.adb		2cd46bc0 NE OO SU
+U main%b		main.adb		76e4b29d NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
 W ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W system%s		system.ads		system.ali
-W system.img_int%s	s-imgint.adb		s-imgint.ali
 W system.parameters%s	s-parame.adb		s-parame.ali
-W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 W system.soft_links%s	s-soflin.adb		s-soflin.ali
 W system.task_info%s	s-tasinf.adb		s-tasinf.ali
 W system.tasking%s	s-taskin.adb		s-taskin.ali
@@ -51,18 +47,16 @@ D interfac.ads		20150518132148 6033a23f interfaces%s
 D i-c.ads		20150518132148 5421119b interfaces.c%s
 D i-cstrin.ads		20150518132148 341d0ddf interfaces.c.strings%s
 D i-cstrea.ads		20150518132148 e53d8b8e interfaces.c_streams%s
-D main.adb		20150923215532 e2f217b0 main%b
+D main.adb		20150924012158 b8c2ceed main%b
 D system.ads		20150518132150 f4ce8c3a system%s
 D s-atacco.ads		20150518132148 4c36d12f system.address_to_access_conversions%s
 D s-crtl.ads		20150518132148 0ebbdb71 system.crtl%s
 D s-exctab.ads		20150518132148 54135002 system.exception_table%s
 D s-ficobl.ads		20150518132148 078245e4 system.file_control_block%s
 D s-finroo.ads		20150518132148 4ff27390 system.finalization_root%s
-D s-imgint.ads		20150518132150 02dbe0c2 system.img_int%s
 D s-multip.ads		20150518132150 38ac9f73 system.multiprocessors%s
 D s-osinte.ads		20150518132150 2e5b26a9 system.os_interface%s
 D s-parame.ads		20150518132150 7e2a0d7f system.parameters%s
-D s-secsta.ads		20150518132150 86a2856d system.secondary_stack%s
 D s-soflin.ads		20150518132150 aa763b52 system.soft_links%s
 D s-stache.ads		20150518132150 a37c21ec system.stack_checking%s
 D s-stausa.ads		20150518132150 017a0a05 system.stack_usage%s
@@ -86,44 +80,49 @@ X 4 a-inteio.ads
 18K13*Integer_Text_IO[10|46] 16|1w22 2r21
 X 9 a-textio.ads
 49K13*Text_IO 471e16 16|1w10 2r9
-242U14*Put 16|53s10 68s10 82s10 96s10 110s10 124s11
-263U14*Put_Line 16|55s10 70s10 84s10 98s10 112s10 126s10 142s4
+242U14*Put 16|54s10 68s10 81s10 94s10 107s10 120s11
+263U14*Put_Line 16|56s10 70s10 83s10 96s10 109s10 122s10 134s4
 X 10 a-tiinio.ads
-66U14*Put 16|18s7[4|18] 54s10[4|18] 69s10[4|18] 83s10[4|18] 97s10[4|18] 111s10[4|18]
-. 125s10[4|18]
+66U14*Put 16|19s7[4|18] 55s10[4|18] 69s10[4|18] 82s10[4|18] 95s10[4|18] 108s10[4|18]
+. 121s10[4|18]
 X 16 main.adb
-4U11*Main 4b11 144l5 144t9
-6i4 i{integer} 73m10 73r13 74r20 87m10 87r13 88r20 101m10 101r13 102r20 115m10
-. 115r13 116r20 132m10 132r13 133r20
-7i4 numero{integer} 17m7 17r15 18r11
-11T14 tarea 13r29 14b14 19l8 19t13
-13a4 arreglo(11T14)
-22t9 primero 49b14 61r7 62l8 62t15
-23Y13 valor 23>19 52b17 56l14 56t19 61s15
-23i19 id{integer} 54r14
-27t9 segundo 65b14 76r7 77l8 77t15
-28Y14 valor1 28>21 67b14 71l14 71t20 76s15
-28i21 id{integer} 69r14
-31t10 tercero 79b14 90r7 91l8 91t15
-32Y14 valor2 32>21 81b14 85l14 85t20 90s15
-32i21 id{integer} 83r14
-35t10 cuarto 93b14 104r7 105l8 105t14
-36Y14 valor3 36>21 95b14 99l14 99t20 104s14
-36i21 id{integer} 97r14
-39t10 quinto 107b14 118r7 119l8 119t14
-40Y14 valor4 40>21 109b14 113l14 113t20 118s14
-40i21 id{integer} 111r14
-43t9 sexto 121b14 135r10 136l11 136t16 143r4
-44Y14 valor5 44>21 123b14 127l14 127t20 135s16 143s10
-44i21 id{integer} 125r14
-50i7 i{integer} 58m10 58r13 59r20
-52i23 id{integer}
+4U11*Main 4b11 136l5 136t9
+6i5 i{integer}
+7i4 numero{integer} 18m7 18r15 19r11
+8a4 arreglo(integer) 59m10 73m10 86m10 99m10 112m10 125m10
+11T14 tarea 15b14 20l8 20t13
+23t9 primero 50b14 61r7 62l8 62t15
+24Y13 valor 24>19 53b17 57l14 57t19 61s15
+24i19 id{integer} 55r14
+28t9 segundo 65b14 75r7 76l8 76t15
+29Y14 valor1 29>21 67b14 71l14 71t20 75s15
+29i21 id{integer} 69r14
+32t10 tercero 78b14 88r7 89l8 89t15
+33Y14 valor2 33>21 80b14 84l14 84t20 88s15
+33i21 id{integer} 82r14
+36t10 cuarto 91b14 101r7 102l8 102t14
+37Y14 valor3 37>21 93b14 97l14 97t20 101s14
+37i21 id{integer} 95r14
+40t10 quinto 104b14 114r7 115l8 115t14
+41Y14 valor4 41>21 106b14 110l14 110t20 114s14
+41i21 id{integer} 108r14
+44t9 sexto 117b14 127r10 128l11 128t16 135r4
+45Y14 valor5 45>21 119b14 123l14 123t20 127s16 135s10
+45i21 id{integer} 121r14
+51i7 i{integer}
+53i23 id{integer}
+58i14 i{integer} 59r18
 67i21 id{integer}
-81i21 id{integer}
-95i21 id{integer}
-109i21 id{integer}
-123i21 id{integer}
-X 30 s-stausa.ads
+72i11 i{integer} 73r18
+80i21 id{integer}
+85i12 i{integer} 86r18
+93i21 id{integer}
+98i11 i{integer} 99r18
+106i21 id{integer}
+111i11 i{integer} 112r18
+119i21 id{integer}
+124i16 i{integer} 125r18
+X 28 s-stausa.ads
 203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
 268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
 
