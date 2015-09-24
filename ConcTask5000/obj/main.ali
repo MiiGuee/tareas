@@ -1,0 +1,129 @@
+V "GNAT Lib v2015"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=pentiumpro
+P SS ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_LOOPS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_HIERARCHY
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+RV MAX_TASK_ENTRIES=1
+RV MAX_TASKS=1+
+
+U main%b		main.adb		2cd46bc0 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system%s		system.ads		system.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20150518132148 3ffc8e18 ada%s
+D a-except.ads		20150518132148 5250cb69 ada.exceptions%s
+D a-finali.ads		20150518132148 69f99942 ada.finalization%s
+D a-inteio.ads		20150518132148 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20150518132148 e4a01f64 ada.io_exceptions%s
+D a-reatim.ads		20150518132148 a5838d5a ada.real_time%s
+D a-stream.ads		20150518132148 119b8fb3 ada.streams%s
+D a-tags.ads		20150518132148 dc4d0634 ada.tags%s
+D a-textio.ads		20150518132148 386df5d4 ada.text_io%s
+D a-tiinio.ads		20150518132148 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20150518132148 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150518132148 6033a23f interfaces%s
+D i-c.ads		20150518132148 5421119b interfaces.c%s
+D i-cstrin.ads		20150518132148 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20150518132148 e53d8b8e interfaces.c_streams%s
+D main.adb		20150923215532 e2f217b0 main%b
+D system.ads		20150518132150 f4ce8c3a system%s
+D s-atacco.ads		20150518132148 4c36d12f system.address_to_access_conversions%s
+D s-crtl.ads		20150518132148 0ebbdb71 system.crtl%s
+D s-exctab.ads		20150518132148 54135002 system.exception_table%s
+D s-ficobl.ads		20150518132148 078245e4 system.file_control_block%s
+D s-finroo.ads		20150518132148 4ff27390 system.finalization_root%s
+D s-imgint.ads		20150518132150 02dbe0c2 system.img_int%s
+D s-multip.ads		20150518132150 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20150518132150 2e5b26a9 system.os_interface%s
+D s-parame.ads		20150518132150 7e2a0d7f system.parameters%s
+D s-secsta.ads		20150518132150 86a2856d system.secondary_stack%s
+D s-soflin.ads		20150518132150 aa763b52 system.soft_links%s
+D s-stache.ads		20150518132150 a37c21ec system.stack_checking%s
+D s-stausa.ads		20150518132150 017a0a05 system.stack_usage%s
+D s-stalib.ads		20150518132150 fa0a3617 system.standard_library%s
+D s-stoele.ads		20150518132150 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20150518132150 601f6b72 system.task_info%s
+D s-taspri.ads		20150518132150 6c1d93d4 system.task_primitives%s
+D s-taprop.ads		20150518132150 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20150518132150 339749f0 system.tasking%s
+D s-taprob.ads		20150518132150 502249e3 system.tasking.protected_objects%s
+D s-tpoben.ads		20150518132150 b641f948 system.tasking.protected_objects.entries%s
+D s-tasren.ads		20150518132150 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20150518132150 70812003 system.tasking.stages%s
+D s-traent.ads		20150518132150 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20150518132150 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20150518132150 1b7d22d2 system.wch_con%s
+D s-win32.ads		20150518132150 b7f96285 system.win32%s
+X 1 ada.ads
+16K9*Ada 19e8 16|1r6 1r18 2r5 2r17
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[10|46] 16|1w22 2r21
+X 9 a-textio.ads
+49K13*Text_IO 471e16 16|1w10 2r9
+242U14*Put 16|53s10 68s10 82s10 96s10 110s10 124s11
+263U14*Put_Line 16|55s10 70s10 84s10 98s10 112s10 126s10 142s4
+X 10 a-tiinio.ads
+66U14*Put 16|18s7[4|18] 54s10[4|18] 69s10[4|18] 83s10[4|18] 97s10[4|18] 111s10[4|18]
+. 125s10[4|18]
+X 16 main.adb
+4U11*Main 4b11 144l5 144t9
+6i4 i{integer} 73m10 73r13 74r20 87m10 87r13 88r20 101m10 101r13 102r20 115m10
+. 115r13 116r20 132m10 132r13 133r20
+7i4 numero{integer} 17m7 17r15 18r11
+11T14 tarea 13r29 14b14 19l8 19t13
+13a4 arreglo(11T14)
+22t9 primero 49b14 61r7 62l8 62t15
+23Y13 valor 23>19 52b17 56l14 56t19 61s15
+23i19 id{integer} 54r14
+27t9 segundo 65b14 76r7 77l8 77t15
+28Y14 valor1 28>21 67b14 71l14 71t20 76s15
+28i21 id{integer} 69r14
+31t10 tercero 79b14 90r7 91l8 91t15
+32Y14 valor2 32>21 81b14 85l14 85t20 90s15
+32i21 id{integer} 83r14
+35t10 cuarto 93b14 104r7 105l8 105t14
+36Y14 valor3 36>21 95b14 99l14 99t20 104s14
+36i21 id{integer} 97r14
+39t10 quinto 107b14 118r7 119l8 119t14
+40Y14 valor4 40>21 109b14 113l14 113t20 118s14
+40i21 id{integer} 111r14
+43t9 sexto 121b14 135r10 136l11 136t16 143r4
+44Y14 valor5 44>21 123b14 127l14 127t20 135s16 143s10
+44i21 id{integer} 125r14
+50i7 i{integer} 58m10 58r13 59r20
+52i23 id{integer}
+67i21 id{integer}
+81i21 id{integer}
+95i21 id{integer}
+109i21 id{integer}
+123i21 id{integer}
+X 30 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+
