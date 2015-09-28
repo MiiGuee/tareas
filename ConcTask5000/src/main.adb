@@ -10,7 +10,7 @@ procedure Main is
 
    task type tarea;
 
-   --arreglo:array(1..5000)of tarea;
+
 
    task body tarea is
    begin
@@ -85,7 +85,7 @@ procedure Main is
        for i in 1..1000 loop
          arreglo(i):=1;
       end loop;
-      tercero.valor2(1);
+      tercero.valor2(2);
    end tercero;
 
    task body cuarto is
@@ -98,7 +98,7 @@ procedure Main is
       for i in 1..1000 loop
          arreglo(i):=1;
       end loop;
-      cuarto.valor3(1);
+      cuarto.valor3(3);
    end cuarto;
 
    task body quinto is
@@ -111,7 +111,7 @@ procedure Main is
       for i in 1..1000 loop
          arreglo(i):=1;
       end loop;
-      quinto.valor4(1);
+      quinto.valor4(4);
    end quinto;
 
    task body sexto is
@@ -124,7 +124,7 @@ procedure Main is
            for i in 1..1000 loop
          arreglo(i):=1;
       end loop;
-         sexto.valor5(1);
+         sexto.valor5(5);
       end sexto;
 
 
@@ -132,5 +132,5 @@ procedure Main is
 
 begin
    Put_Line("Soy el procedimiento principal");
-   sexto.valor5(5000);
+   sexto.valor5(1+2+3+4+5);
 end Main;

@@ -18,7 +18,7 @@ RV SPARK_05
 RV MAX_TASK_ENTRIES=1
 RV MAX_TASKS=1+
 
-U main%b		main.adb		76e4b29d NE OO SU
+U main%b		main.adb		3218500e NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
@@ -47,7 +47,7 @@ D interfac.ads		20150518132148 6033a23f interfaces%s
 D i-c.ads		20150518132148 5421119b interfaces.c%s
 D i-cstrin.ads		20150518132148 341d0ddf interfaces.c.strings%s
 D i-cstrea.ads		20150518132148 e53d8b8e interfaces.c_streams%s
-D main.adb		20150924012158 b8c2ceed main%b
+D main.adb		20150928040546 fc3e2c7e main%b
 D system.ads		20150518132150 f4ce8c3a system%s
 D s-atacco.ads		20150518132148 4c36d12f system.address_to_access_conversions%s
 D s-crtl.ads		20150518132148 0ebbdb71 system.crtl%s
@@ -80,48 +80,47 @@ X 4 a-inteio.ads
 18K13*Integer_Text_IO[10|46] 16|1w22 2r21
 X 9 a-textio.ads
 49K13*Text_IO 471e16 16|1w10 2r9
-242U14*Put 16|54s10 68s10 81s10 94s10 107s10 120s11
-263U14*Put_Line 16|56s10 70s10 83s10 96s10 109s10 122s10 134s4
+242U14*Put 16|52s10 67s10 81s10 95s10 109s10 123s11
+263U14*Put_Line 16|54s10 69s10 83s10 97s10 111s10 125s10 134s4
 X 10 a-tiinio.ads
-66U14*Put 16|19s7[4|18] 55s10[4|18] 69s10[4|18] 82s10[4|18] 95s10[4|18] 108s10[4|18]
-. 121s10[4|18]
+66U14*Put 16|17s7[4|18] 53s10[4|18] 68s10[4|18] 82s10[4|18] 96s10[4|18] 110s10[4|18]
+. 124s10[4|18]
 X 16 main.adb
 4U11*Main 4b11 136l5 136t9
 6i5 i{integer}
-7i4 numero{integer} 18m7 18r15 19r11
-8a4 arreglo(integer) 59m10 73m10 86m10 99m10 112m10 125m10
-11T14 tarea 15b14 20l8 20t13
-23t9 primero 50b14 61r7 62l8 62t15
-24Y13 valor 24>19 53b17 57l14 57t19 61s15
-24i19 id{integer} 55r14
-28t9 segundo 65b14 75r7 76l8 76t15
-29Y14 valor1 29>21 67b14 71l14 71t20 75s15
-29i21 id{integer} 69r14
-32t10 tercero 78b14 88r7 89l8 89t15
-33Y14 valor2 33>21 80b14 84l14 84t20 88s15
-33i21 id{integer} 82r14
-36t10 cuarto 91b14 101r7 102l8 102t14
-37Y14 valor3 37>21 93b14 97l14 97t20 101s14
-37i21 id{integer} 95r14
-40t10 quinto 104b14 114r7 115l8 115t14
-41Y14 valor4 41>21 106b14 110l14 110t20 114s14
-41i21 id{integer} 108r14
-44t9 sexto 117b14 127r10 128l11 128t16 135r4
-45Y14 valor5 45>21 119b14 123l14 123t20 127s16 135s10
-45i21 id{integer} 121r14
-51i7 i{integer}
-53i23 id{integer}
-58i14 i{integer} 59r18
-67i21 id{integer}
-72i11 i{integer} 73r18
+7i4 numero{integer} 16m7 16r15 17r11
+8a4 arreglo(integer) 57m10 72m10 86m10 100m10 114m10
+11T14 tarea 13b14 18l8 18t13
+21t9 primero 48b14 60r7 61l8 61t15
+22Y13 valor 22>19 51b17 55l14 55t19 60s15
+22i19 id{integer} 53r14
+26t9 segundo 64b14 75r7 76l8 76t15
+27Y14 valor1 27>21 66b14 70l14 70t20 75s15
+27i21 id{integer} 68r14
+30t10 tercero 78b14 89r7 90l8 90t15
+31Y14 valor2 31>21 80b14 84l14 84t20 89s15
+31i21 id{integer} 82r14
+34t10 cuarto 92b14 103r7 104l8 104t14
+35Y14 valor3 35>21 94b14 98l14 98t20 103s14
+35i21 id{integer} 96r14
+38t10 quinto 106b14 117r7 118l8 118t14
+39Y14 valor4 39>21 108b14 112l14 112t20 117s14
+39i21 id{integer} 110r14
+42t9 sexto 120b14 127r10 128l11 128t16 135r4
+43Y14 valor5 43>21 122b14 126l14 126t20 127s16 135s10
+43i21 id{integer} 124r14
+49i7 i{integer}
+51i23 id{integer}
+56i14 i{integer} 57r18 58r20
+66i21 id{integer}
+71i11 i{integer} 72r18 73r20
 80i21 id{integer}
-85i12 i{integer} 86r18
-93i21 id{integer}
-98i11 i{integer} 99r18
-106i21 id{integer}
-111i11 i{integer} 112r18
-119i21 id{integer}
-124i16 i{integer} 125r18
+85i12 i{integer} 86r18 87r20
+94i21 id{integer}
+99i11 i{integer} 100r18 101r20
+108i21 id{integer}
+113i11 i{integer} 114r18 115r20
+122i21 id{integer}
 X 28 s-stausa.ads
 203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
 268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
