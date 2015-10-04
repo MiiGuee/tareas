@@ -1,0 +1,73 @@
+V "GNAT Lib v2015"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=pentiumpro
+P ZX
+
+RN
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U main%b		main.adb		ea2720b5 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20150518132148 3ffc8e18 ada%s
+D a-except.ads		20150518132148 5250cb69 ada.exceptions%s
+D a-inteio.ads		20150518132148 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20150518132148 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20150518132148 119b8fb3 ada.streams%s
+D a-tags.ads		20150518132148 dc4d0634 ada.tags%s
+D a-textio.ads		20150518132148 386df5d4 ada.text_io%s
+D a-tiinio.ads		20150518132148 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20150518132148 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150518132148 6033a23f interfaces%s
+D i-cstrea.ads		20150518132148 e53d8b8e interfaces.c_streams%s
+D main.adb		20151001011230 24015cc5 main%b
+D system.ads		20150518132150 f4ce8c3a system%s
+D s-crtl.ads		20150518132148 0ebbdb71 system.crtl%s
+D s-exctab.ads		20150518132148 54135002 system.exception_table%s
+D s-ficobl.ads		20150518132148 078245e4 system.file_control_block%s
+D s-parame.ads		20150518132150 7e2a0d7f system.parameters%s
+D s-soflin.ads		20150518132150 aa763b52 system.soft_links%s
+D s-stache.ads		20150518132150 a37c21ec system.stack_checking%s
+D s-stalib.ads		20150518132150 fa0a3617 system.standard_library%s
+D s-stoele.ads		20150518132150 2dc34a04 system.storage_elements%s
+D s-traent.ads		20150518132150 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20150518132150 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20150518132150 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 12|1r6 1r18 2r5 2r17
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 12|1w22 2r21
+X 7 a-textio.ads
+49K13*Text_IO 471e16 12|1w10 2r9
+263U14*Put_Line 12|31s7 34s4 39s7 50s4 55s7
+X 8 a-tiinio.ads
+66U14*Put 12|29s10[3|18] 37s10[3|18] 53s9[3|18]
+X 12 main.adb
+4U11*Main 4b11 59l5 59t9
+6a4 MatA(integer) 16m10 29r14 45r37
+7a4 MatB(integer) 17m11 37r14 45r49
+8a4 MatC(integer) 23m7 45m13 45r25 53r13
+10i4 i{integer}
+10i6 j{integer}
+10i8 k{integer}
+10i10 multiplicacion{integer}
+14i8 i{integer} 16r15 17r16
+15i10 j{integer} 16r17 17r18
+21i8 i{integer} 23r12
+22i11 j{integer} 23r14
+27i8 i{integer} 29r19
+28i10 j{integer} 29r21
+35i8 i{integer} 37r19
+36i10 j{integer} 37r21
+42i8 i{integer} 45r18 45r30 45r42 45r54
+43i10 j{integer} 45r20 45r32 45r44 45r56
+44i14 k{integer}
+51i8 i{integer} 53r18
+52i11 j{integer} 53r20
+
