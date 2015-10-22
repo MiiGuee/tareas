@@ -1,0 +1,161 @@
+V "GNAT Lib v2015"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=pentiumpro
+P SS ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_HIERARCHY
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+RV MAX_TASK_ENTRIES=1
+RV MAX_TASKS=1+
+
+U main%b		main.adb		247ec884 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_wide_text_io%s  a-iwteio.ads	a-iwteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20150518132148 3ffc8e18 ada%s
+D a-except.ads		20150518132148 5250cb69 ada.exceptions%s
+D a-finali.ads		20150518132148 69f99942 ada.finalization%s
+D a-iwteio.ads		20150518132148 a59de6c0 ada.integer_wide_text_io%s
+D a-ioexce.ads		20150518132148 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20150518132148 bb51c45a ada.numerics%s
+D a-nudira.ads		20150518132148 2fef2912 ada.numerics.discrete_random%s
+D a-nudira.adb		20150518132148 e57ce22b ada.numerics.discrete_random%b
+D a-reatim.ads		20150518132148 a5838d5a ada.real_time%s
+D a-stream.ads		20150518132148 119b8fb3 ada.streams%s
+D a-tags.ads		20150518132148 dc4d0634 ada.tags%s
+D a-textio.ads		20150518132148 386df5d4 ada.text_io%s
+D a-tiinio.ads		20150518132148 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20150518132148 f9eb8f06 ada.unchecked_conversion%s
+D a-witeio.ads		20150518132148 551dcbf1 ada.wide_text_io%s
+D a-wtinio.ads		20150518132148 d056ca02 ada.wide_text_io.integer_io%s
+D interfac.ads		20150518132148 6033a23f interfaces%s
+D i-c.ads		20150518132148 5421119b interfaces.c%s
+D i-cstrin.ads		20150518132148 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20150518132148 e53d8b8e interfaces.c_streams%s
+D main.adb		20151022033406 9661f282 main%b
+D system.ads		20150518132150 f4ce8c3a system%s
+D s-atacco.ads		20150518132148 4c36d12f system.address_to_access_conversions%s
+D s-crtl.ads		20150518132148 0ebbdb71 system.crtl%s
+D s-exctab.ads		20150518132148 54135002 system.exception_table%s
+D s-ficobl.ads		20150518132148 078245e4 system.file_control_block%s
+D s-finroo.ads		20150518132148 4ff27390 system.finalization_root%s
+D s-imguns.ads		20150518132150 9ff43cf7 system.img_uns%s
+D s-multip.ads		20150518132150 38ac9f73 system.multiprocessors%s
+D s-osinte.ads		20150518132150 2e5b26a9 system.os_interface%s
+D s-parame.ads		20150518132150 7e2a0d7f system.parameters%s
+D s-rannum.ads		20150518132150 99ade2f2 system.random_numbers%s
+D s-rannum.adb		20150518132150 20ba1217 system.random_numbers%b
+D s-ransee.ads		20150518132150 01a57b33 system.random_seed%s
+D s-secsta.ads		20150518132150 86a2856d system.secondary_stack%s
+D s-soflin.ads		20150518132150 aa763b52 system.soft_links%s
+D s-stache.ads		20150518132150 a37c21ec system.stack_checking%s
+D s-stausa.ads		20150518132150 017a0a05 system.stack_usage%s
+D s-stalib.ads		20150518132150 fa0a3617 system.standard_library%s
+D s-stoele.ads		20150518132150 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20150518132150 601f6b72 system.task_info%s
+D s-taspri.ads		20150518132150 6c1d93d4 system.task_primitives%s
+D s-taprop.ads		20150518132150 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20150518132150 339749f0 system.tasking%s
+D s-taprob.ads		20150518132150 502249e3 system.tasking.protected_objects%s
+D s-tpoben.ads		20150518132150 b641f948 system.tasking.protected_objects.entries%s
+D s-tasren.ads		20150518132150 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20150518132150 70812003 system.tasking.stages%s
+D s-traent.ads		20150518132150 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20150518132150 9d58a4c0 system.unsigned_types%s
+D s-valuns.ads		20150518132150 10a8ed3b system.val_uns%s
+D s-wchcon.ads		20150518132150 1b7d22d2 system.wch_con%s
+D s-win32.ads		20150518132150 b7f96285 system.win32%s
+X 1 ada.ads
+16K9*Ada 19e8 21|1r6 1r18 1r43 2r5 2r17 7r37 13r44 19r48 25r50 31r51
+X 4 a-iwteio.ads
+18K13*Integer_Wide_Text_IO[16|25] 21|1w22 2r21
+X 6 a-numeri.ads
+16K13*Numerics 32e17 21|1r47 7r41 13r48 19r52 25r54 31r55
+X 7 a-nudira.ads
+44k22*Discrete_Random 73e33 21|1w56 7r50 13r57 19r61 25r63 31r64
+48R9 Generator<32|63R9> 21|9r26[7] 15r33[13] 21r33[13] 27r40[25] 33r41[31]
+50V13 Random{integer} 21|65s18[7] 83s19[13] 102s19[13] 121s20[25] 141s20[25]
+53U14 Reset<32|100p14> 21|62s7[7] 80s7[13] 99s7[13] 118s7[25] 138s7[25]
+X 8 a-nudira.adb
+51V16 Random[32|83]{integer} 33|392b13[21|13]
+X 12 a-textio.ads
+49K13*Text_IO 471e16 21|1w10 2r9
+263U14*Put_Line 21|67s10 69s13 85s10 87s13 104s10 106s13 123s10 125s13 143s10
+. 145s13 156s4
+X 17 interfac.ads
+68M9*Unsigned_32
+71M9*Unsigned_64
+X 21 main.adb
+4U11*Main 4b11 158l5 158t9
+6I12 rango{integer} 7r67
+7K12 randomTemperatura[7|44] 8r8 9r8
+9r4 Tm{7|48R9[7]} 62r13 65r25
+10i4 ele{integer} 64m10
+12I12 rango1{integer} 13r74
+13K12 randomFrecuenciaCardiaca[7|44] 14r8 15r8 21r8
+15r4 Fc{7|48R9[13]} 80r13 83r26
+16i4 ele1{integer} 82m10
+18I12 rango2{integer} 19r78
+19K12 randomFrecuenciaRespiratoria[7|44] 20r8
+21r4 Fr{7|48R9[13]} 99r13 102r26
+22i4 ele2{integer} 101m10
+24I12 rango3{integer} 25r80
+25K12 randomPresionArterialSistolica[7|44] 26r8 27r9
+27r4 pas{7|48R9[25]} 118r13 121r27 138r13 141r27
+28i4 ele3{integer} 120m10
+30I12 rango4{integer} 31r81
+31K12 randomPresionArterialAsistolica[7|44] 32r8 33r9
+33r4 paa{7|48R9[31]}
+34i4 ele4{integer} 140m10
+37t9 Temperatura 59b14 73l8 73t19 91r7
+38Y13 continuar 61b11 72l11 72t20 91s19
+41t9 FrecuenciaCardiaca 77b14 92l8 92t26 110r7
+42Y13 continuar1 79b14 90l11 90t21 110s26
+45t9 FrecuenciaRespiratoria 96b14 111l8 111t30 129r7
+46Y13 continuar2 98b14 109l11 109t21 129s30
+49t9 PresionArterialSistolica 115b14 130l8 130t32 149r7
+50Y13 continuar3 117b14 128l11 128t21 149s32
+53t9 PresionArterialAsistolica 135b14 150l8 150t33 157r4
+54Y13 continuar4 137b17 148l11 148t21 157s30
+57i4 temp{integer} 64r15 65m10 66r14 66r28
+63i11 i{integer}
+75i4 frecC{integer} 82r16 83m10 84r14 84r29
+81i11 i{integer}
+94i4 frecR{integer} 101r17 102m11 103r15 103r31
+100i11 i{integer}
+113i4 presAs{integer} 120r17 121m11 122r15 122r32
+119i11 i{integer}
+133i5 presAa{integer} 140r17 141m11 142r15 142r31
+139i11 i{integer}
+X 32 s-rannum.ads
+75V13*Random{17|68M9} 33|221i21
+76V13*Random{17|71M9} 33|221i21
+X 38 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+
