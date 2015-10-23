@@ -19,7 +19,7 @@ RV SPARK_05
 RV MAX_TASK_ENTRIES=1
 RV MAX_TASKS=1+
 
-U main%b		main.adb		247ec884 NE OO SU
+U main%b		main.adb		89ed9825 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.integer_wide_text_io%s  a-iwteio.ads	a-iwteio.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
@@ -57,7 +57,7 @@ D interfac.ads		20150518132148 6033a23f interfaces%s
 D i-c.ads		20150518132148 5421119b interfaces.c%s
 D i-cstrin.ads		20150518132148 341d0ddf interfaces.c.strings%s
 D i-cstrea.ads		20150518132148 e53d8b8e interfaces.c_streams%s
-D main.adb		20151022033708 9661f282 main%b
+D main.adb		20151022185726 3bf2a223 main%b
 D system.ads		20150518132150 f4ce8c3a system%s
 D s-atacco.ads		20150518132148 4c36d12f system.address_to_access_conversions%s
 D s-crtl.ads		20150518132148 0ebbdb71 system.crtl%s
@@ -99,59 +99,59 @@ X 6 a-numeri.ads
 X 7 a-nudira.ads
 44k22*Discrete_Random 73e33 21|1w56 7r50 13r57 19r61 25r63 31r64
 48R9 Generator<32|63R9> 21|9r26[7] 15r33[13] 21r33[13] 27r40[25] 33r41[31]
-50V13 Random{integer} 21|65s18[7] 83s19[13] 102s19[13] 121s20[25] 141s20[25]
-53U14 Reset<32|100p14> 21|62s7[7] 80s7[13] 99s7[13] 118s7[25] 138s7[25]
+50V13 Random{integer} 21|65s18[7] 84s19[13] 103s19[13] 123s20[25] 143s20[25]
+53U14 Reset<32|100p14> 21|61s7[7] 80s7[13] 99s7[13] 119s7[25] 139s7[25]
 X 8 a-nudira.adb
 51V16 Random[32|83]{integer} 33|392b13[21|13]
 X 12 a-textio.ads
 49K13*Text_IO 471e16 21|1w10 2r9
-263U14*Put_Line 21|67s10 69s13 85s10 87s13 104s10 106s13 123s10 125s13 143s10
-. 145s13 156s4
+263U14*Put_Line 21|67s10 69s13 86s10 88s10 105s10 107s13 125s10 127s13 145s10
+. 147s13 158s4
 X 17 interfac.ads
 68M9*Unsigned_32
 71M9*Unsigned_64
 X 21 main.adb
-4U11*Main 4b11 158l5 158t9
+4U11*Main 4b11 160l5 160t9
 6I12 rango{integer} 7r67
 7K12 randomTemperatura[7|44] 8r8 9r8
-9r4 Tm{7|48R9[7]} 62r13 65r25
+9r4 Tm{7|48R9[7]} 61r13 65r25
 10i4 ele{integer} 64m10
 12I12 rango1{integer} 13r74
 13K12 randomFrecuenciaCardiaca[7|44] 14r8 15r8 21r8
-15r4 Fc{7|48R9[13]} 80r13 83r26
-16i4 ele1{integer} 82m10
+15r4 Fc{7|48R9[13]} 80r13 84r26
+16i4 ele1{integer} 83m10
 18I12 rango2{integer} 19r78
 19K12 randomFrecuenciaRespiratoria[7|44] 20r8
-21r4 Fr{7|48R9[13]} 99r13 102r26
-22i4 ele2{integer} 101m10
+21r4 Fr{7|48R9[13]} 99r13 103r26
+22i4 ele2{integer} 102m10
 24I12 rango3{integer} 25r80
 25K12 randomPresionArterialSistolica[7|44] 26r8 27r9
-27r4 pas{7|48R9[25]} 118r13 121r27 138r13 141r27
-28i4 ele3{integer} 120m10
+27r4 pas{7|48R9[25]} 119r13 123r27 139r13 143r27
+28i4 ele3{integer} 122m10
 30I12 rango4{integer} 31r81
 31K12 randomPresionArterialAsistolica[7|44] 32r8 33r9
 33r4 paa{7|48R9[31]}
-34i4 ele4{integer} 140m10
-37t9 Temperatura 59b14 73l8 73t19 91r7
-38Y13 continuar 61b11 72l11 72t20 91s19
-41t9 FrecuenciaCardiaca 77b14 92l8 92t26 110r7
-42Y13 continuar1 79b14 90l11 90t21 110s26
-45t9 FrecuenciaRespiratoria 96b14 111l8 111t30 129r7
-46Y13 continuar2 98b14 109l11 109t21 129s30
-49t9 PresionArterialSistolica 115b14 130l8 130t32 149r7
-50Y13 continuar3 117b14 128l11 128t21 149s32
-53t9 PresionArterialAsistolica 135b14 150l8 150t33 157r4
-54Y13 continuar4 137b17 148l11 148t21 157s30
+34i4 ele4{integer} 142m10
+37t9 Temperatura 59b14 74l8 74t19 90r14
+38Y13 continuar 63b17 72l14 72t23 90s26
+41t9 FrecuenciaCardiaca 78b14 93l8 93t26 109r13
+42Y13 continuar1 82b17 91l14 91t24 109s32
+45t9 FrecuenciaRespiratoria 97b14 112l8 112t30 129r13
+46Y13 continuar2 101b17 110l14 110t24 129s36
+49t9 PresionArterialSistolica 117b14 132l8 132t32 149r13
+50Y13 continuar3 121b17 130l14 130t24 149s38
+53t9 PresionArterialAsistolica 71r13 137b14 152l8 152t33 159r4
+54Y13 continuar4 71s39 141b17 150l14 150t24 159s30
 57i4 temp{integer} 64r15 65m10 66r14 66r28
-63i11 i{integer}
-75i4 frecC{integer} 82r16 83m10 84r14 84r29
+62i11 i{integer}
+76i4 frecC{integer} 83r16 84m10 85r14 85r29
 81i11 i{integer}
-94i4 frecR{integer} 101r17 102m11 103r15 103r31
+95i4 frecR{integer} 102r17 103m11 104r15 104r31
 100i11 i{integer}
-113i4 presAs{integer} 120r17 121m11 122r15 122r32
-119i11 i{integer}
-133i5 presAa{integer} 140r17 141m11 142r15 142r31
-139i11 i{integer}
+115i4 presAs{integer} 122r17 123m11 124r15 124r32
+120i11 i{integer}
+135i5 presAa{integer} 142r17 143m11 144r15 144r31
+140i11 i{integer}
 X 32 s-rannum.ads
 75V13*Random{17|68M9} 33|221i21
 76V13*Random{17|71M9} 33|221i21
